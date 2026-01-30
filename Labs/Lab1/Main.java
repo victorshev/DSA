@@ -17,11 +17,14 @@ public class Main {
     // Outputting array in order using while loop
     int ind = 0; 
     while(ind < numbers.length) {
-      System.out.println("Value of" + ind + " is " + numbers[ind]);
+      System.out.println("Value of " + ind + " is " + numbers[ind]);
       ind++;
     }
 
     // Outputting array in reverse using a for loop 
+    for(int i = numbers.length - 1; i >= 0; i--) {
+      System.out.println("Value of " + i + " is " + numbers[i]);
+    }
 
     // Outputting first and last elements of the array
     System.out.println("First # in array is " +numbers[0]);
