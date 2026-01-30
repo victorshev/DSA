@@ -1,4 +1,4 @@
-# 📘 Data Structures & Algorithms (DSA)
+# 🧠💻🧱⚙️ Data Structures & Algorithms (DSA)
 
 Hello, this repository is for my Data Structures and Algorithms course. I hope to gain an immense understanding of the importance of optimizing data processing in Software Engineering. 
 
