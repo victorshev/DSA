@@ -12,11 +12,17 @@ public class Main {
       Lab4.outputList(integerList);
 
       System.out.println("\n\nBubble sort results ----------------------------------------------");
+      long bubbleStart = System.nanoTime();
       ArrayList<Integer> bubbleSortedList = Lab4.bubbleSort(integerList);
+      long bubbleEnd = System.nanoTime();
+      System.out.println("Bubble sort time: " + (bubbleEnd - bubbleStart) + " ns");
       Lab4.outputList(bubbleSortedList);
 
       System.out.println("\n\nInsertion sort results -------------------------------------------");
-      ArrayList<Integer> insertionSortedList = Lab4.insertionSort(integerList);  
+      long insertionStart = System.nanoTime();
+      ArrayList<Integer> insertionSortedList = Lab4.insertionSort(integerList);
+      long insertionEnd = System.nanoTime();
+      System.out.println("Insertion sort time: " + (insertionEnd - insertionStart) + " ns");
       Lab4.outputList(insertionSortedList);
     }
 }
