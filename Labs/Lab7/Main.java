@@ -44,7 +44,7 @@ class Main {
 
     for (int i = 0; i < searchOrder.size(); i++) {
       int vertexIndex = searchOrder.get(i);
-      System.out.println("The vertex of the DFS traversal: " + graph.getVertex(vertexIndex)); 
+      System.out.println("The vertex of the DFS traversal: " + vertexIndex); 
     }
 
     // 6. Print the parent-child relationships for each vertex during the DFS traversal
@@ -54,9 +54,9 @@ class Main {
       int parent = dfs.getParent(i);
 
       if (parent == -1) {
-        System.out.println(graph.getVertex(i) + " is the root of the DFS tree.");
+        System.out.println(i + " is the root of the DFS tree.");
       } else {
-        System.out.println(graph.getVertex(parent) + " -> " + graph.getVertex(i));
+        System.out.println(parent + " -> " + i);
       }
     }
 
